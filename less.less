@@ -1,0 +1,57 @@
+#outer {
+    .inner {
+      color: red;
+    }
+  }
+  
+  .c {
+    #outer > .inner;
+  }
+
+body{
+    #outer>.inner;
+}
+
+.border(@width,@color){
+    border: @width @color bold;
+}
+body{
+.border(1px,red);
+}
+
+.minx(2;)
+{
+    color:red;
+}
+.minx(1;)
+{
+    color:blue;
+}
+div{
+    .minx(1;);
+}
+div{
+    .minx(2;);
+}
+@counter1:4+1;
+@counter:@counter1 + 1;
+.loop() when (@counter = 6) {
+     // 递归调用自身
+    width: (10px * @counter); // 每次调用时产生的样式代码
+  }
+  
+  div {
+    .loop(); // 调用循环
+  }
+
+  .a-variant(@color)
+  {
+    color:@color;
+      &:hover{
+          color:lighten(@color,50%)
+      }
+  }
+
+  a{
+      .a-variant(black);
+  }

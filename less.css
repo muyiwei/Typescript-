@@ -1,0 +1,28 @@
+#outer .inner {
+  color: red;
+}
+.c {
+  color: red;
+}
+body {
+  color: red;
+}
+body {
+  border: 1px red bold;
+}
+div {
+  color: blue;
+}
+div {
+  color: red;
+}
+div {
+  width: 60px;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: #808080;
+}
+/*# sourceMappingURL=./less.css.map */
